@@ -1,4 +1,4 @@
-# example-of-ros2-jazzy-venv
+# Example Of Ros2 Jazzy With Python Venv Dependency
 
 Lets build the simple [dwm1001 package](https://github.com/the-hive-lab/dwm1001_ros2/tree/integration) with its [python dependencies](https://pypi.org/project/pydwm1001/).
 
@@ -40,6 +40,8 @@ mkdir myrosws
 
 python3 -m pip install pydwm1001
 ```
+
+You MUST use `python3 -m <command>` instead of `<command>` to use the venv. Simply calling `pip` would use system level pip, we do not want that. Instead we use `python3 -m pip` that rightly uses pip from inside the venv.
 
 ---
 Build your workspace (I would recommand a fresh new terminal):
