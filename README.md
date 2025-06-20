@@ -15,6 +15,7 @@ git clone https://github.com/the-hive-lab/dwm1001_ros2.git
 cd ..
 ```
 
+---
 Make your python venv:
 ```bash
 cd ~
@@ -28,6 +29,7 @@ python3 -m venv --system-site-packages ./venv # creates venv with ros2 pkg inclu
 python3 -m pip install --upgrade pip wheel # updates wheel that is often outdated
 ```
 
+---
 Install you dependencies:
 ```bash
 cd ~
@@ -39,6 +41,7 @@ mkdir myrosws
 python3 -m pip install pydwm1001
 ```
 
+---
 Build your workspace (I would recommand a fresh new terminal):
 ```bash
 cd ~
@@ -52,6 +55,7 @@ python3 -m colcon build
 
 You MUST build with the colcon from inside your venv by using `python3 -m colcon`. System level simple `colcon` command is not part of the venv, thus does not include your python dependencies.
 
+---
 Launch your node (sourcing venv and ros not necessary):
 ```bash
 cd ~
