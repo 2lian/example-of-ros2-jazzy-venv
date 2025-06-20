@@ -71,3 +71,5 @@ ros2 launch dwm1001_launch active_node.launch.py
 Enabling the venv is not necessary for launching and running ros2 nodes, it is only necessary for building. The venv is included by colcon in your ros workspace when you build.
 
 However, please note that the venv is only available inside a node, it is not available inside a ros2 launcher `launch.py`.
+
+(The launcher above will output `Could not open serial port '/dev/ttyACM0'. Shutting down.` if everything is installed properly. If a dependency was missing it would throw a python dependency error.)
